@@ -569,6 +569,13 @@ footer a {
     padding-left: 0;
     padding-right: 0;
   }
+
+  .about-btn {
+    padding: 0 16px;
+  }
+  .py-5 {
+    padding-bottom: 0 !important;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
