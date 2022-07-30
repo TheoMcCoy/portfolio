@@ -23,16 +23,16 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body,
 html {
-  overflow-x: hidden;
-}
-body {
+  max-width: 100%;
   background-color: #000000;
   scroll-behavior: smooth;
-
+  overflow-x: hidden;
   cursor: none;
   color: #fff;
 }
+
 .cursor {
   width: 2rem;
   height: 2rem;
@@ -570,6 +570,10 @@ footer a {
   }
   .contact-svg {
     height: 85px;
+  }
+  .contact-px-5 {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
