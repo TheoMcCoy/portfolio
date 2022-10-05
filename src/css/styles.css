@@ -45,7 +45,10 @@ html {
   transition-property: background, transform;
   transform-origin: 100% 100%;
 }
-
+.nav-item {
+  font-size: 1.2em;
+  padding: 0 10px;
+}
 .hovered-link {
   color: #fff;
 }
@@ -259,6 +262,12 @@ ul .description:first-child {
   margin-top: 0;
 }
 
+/* .skills,
+.design-container .col-lg-6 {
+  max-width: 90%;
+  max-height: 150px;
+  margin: 0 auto;
+} */
 .div-faq1,
 .skills-div1 {
   grid-area: 1 / 1 / 2 / 3;
@@ -520,7 +529,22 @@ footer a {
 .project-hovered {
   -webkit-text-fill-color: var(--primary-color);
 }
-
+.accordion-button {
+  font-size: 2rem;
+  height: 100px;
+}
+.accordion {
+  /* margin: 0 auto; */
+  text-align: center;
+}
+.accordion-item {
+  display: inline-block;
+  width: 45%;
+  margin: 10px;
+}
+.accordion-body {
+  text-align: start;
+}
 @media only screen and (max-width: 767.98px) {
   #logo {
     margin-bottom: -25px;
