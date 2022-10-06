@@ -58,7 +58,7 @@
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
                             
-                                <form id="contactForm" name="contact" method="POST" data-netlify="true">
+                                <!-- <form id="contactForm" name="contact" method="POST" data-netlify="true">
                                 <!-- Name input-->
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" data-sb-can-submit="no">
@@ -103,50 +103,29 @@
                                 <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                 <!-- Submit Button-->
                                 <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                                </form>
+                                </form> -->
 
+                                <!-- new form -->
                                 <form name="contact" method="POST" data-netlify="true">
-                                <!-- Name input-->
-                                <div class="form-floating mb-3">
-                                    <input type="text" placeholder="Enter your name..." data-sb-validations="required" data-sb-can-submit="no">
-                                    <label for="name">Full name</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                                </div>
-                                <!-- Email address input-->
-                                <div class="form-floating mb-3">
-                                    <input  type="email" placeholder="name@example.com" data-sb-validations="required,email" data-sb-can-submit="no">
-                                    <label for="email">Email address</label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                                </div>
-                                <!-- Phone number input-->
-                                <div class="form-floating mb-3">
-                                    <input type="tel" placeholder="060 456 7890" data-sb-validations="required" data-sb-can-submit="no">
-                                    <label for="phone">Phone number</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                                </div>
-                                <!-- Message input-->
-                                <div class="form-floating mb-3">
-                                    <textarea type="text" placeholder="Enter your message here..." style="height: 184px;" data-sb-validations="required" data-sb-can-submit="no"></textarea>
+                                    <div class="form-floating mb-3">
+                                        <label>Your Name: <input type="text" name="name" /></label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <label>Your Email: <input type="email" name="email" /></label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <label>Cellphone Number: <input type="number" name="number" /></label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <textarea type="text" placeholder="Enter your message here..." style="height: 184px;" data-sb-validations="required" data-sb-can-submit="no"></textarea>
                                     <label for="message">Message</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                                </div>
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                                <!-- Submit Button-->
-                                <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                                    </div>
+                                    <p>
+                                        <label>Message: <textarea name="message"></textarea></label>
+                                    </p>
+                                    <p>
+                                        <button type="submit">Send</button>
+                                    </p>
                                 </form>
                         </div>
                     </div>
@@ -199,26 +178,7 @@
             </div>
         </footer>
 
-<!-- <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form> -->
+
 
 
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
