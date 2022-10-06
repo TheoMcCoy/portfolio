@@ -57,7 +57,8 @@
                             <!-- To make this form functional, sign up at-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
-                            <form id="contactForm"  data-netlify="true" data-sb-form-api-token="API_TOKEN">
+                            
+                                <form id="contactForm" name="contact" method="POST" data-netlify="true">
                                 <!-- Name input-->
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" data-sb-can-submit="no">
@@ -102,7 +103,7 @@
                                 <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                 <!-- Submit Button-->
                                 <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                            </form>
+                            </>
                         </div>
                     </div>
                 </div>
@@ -154,7 +155,7 @@
             </div>
         </footer>
 
-<form name="contact" method="POST" data-netlify="true">
+<!-- <form name="contact" method="POST" data-netlify="true">
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
   </p>
@@ -173,10 +174,10 @@
   <p>
     <button type="submit">Send</button>
   </p>
-</form>
+</form> -->
 
 
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
     </main>
 
 </body>
