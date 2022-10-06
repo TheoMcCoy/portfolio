@@ -575,7 +575,7 @@ footer a {
 .recaptcha {
   text-align: center;
 }
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
   #logo {
     margin-bottom: -25px;
   }
@@ -633,6 +633,10 @@ footer a {
   .py-5 {
     padding-bottom: 0 !important;
   }
+  .accordion-item {
+    display: block;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -652,9 +656,8 @@ footer a {
     margin-bottom: 5rem;
   }
 }
-@media only screen and (max-width: 768px) {
-  .accordion-item {
-    display: block;
-    width: 100%;
+@media screen and (max-width: 425px) {
+  .accordion-button {
+    font-size: 1rem;
   }
 }
